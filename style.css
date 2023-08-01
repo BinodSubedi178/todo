@@ -49,7 +49,7 @@ input:focus::placeholder {
 .positive_alert{
     background-color: rgba(0, 128, 0, 0.6);
     color: rgba(255, 255, 255, 0.7);
-    /* display: none; */
+    display: none;
 }
 .negative_alert{
     background-color: rgba(128, 0, 0, 0.6);
@@ -66,6 +66,7 @@ input:focus::placeholder {
 #container {
     background:linear-gradient(#000428,#004e92);
     height: 100vh;
+    max-height: max-content;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -93,22 +94,19 @@ input:focus::placeholder {
 }
 #main-section .right{
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 55vh !important;
 }
-#todo{
+#toDo{
     width: 90%;
     display: flex;
     flex-direction: column;
     color: rgb(221, 219, 219);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
-#todo h4,p{
-    font-family: 'Roboto Mono', monospace;
-    margin-bottom: 5px;
-}
-#todo p{
-    margin-bottom: 10px;
-}
+
 #main-section .decoration{
     height: max-content;
     width: 35%;
@@ -159,6 +157,28 @@ input:focus::placeholder {
     font-size: 1.2rem;
     cursor: pointer;
 
+}
+.list_styling{
+    display: flex;
+    align-items: center;
+    background-color: #00042880;
+    height: 35px;
+    border-radius: 6.5px;
+    width: 95%;
+    margin: 5px;
+    padding-left: 5px;
+}
+.list_styling h4,p{
+    color: rgb(221, 219, 219);
+    font-family: 'Roboto Mono', monospace;
+    margin: 10px;
+}
+#Empty_info{
+    position: absolute;
+    top: 45%;
+    color: rgb(221, 219, 219);
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono', monospace;
 }
 footer{
     text-align: center;
