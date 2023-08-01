@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="confirmation_alert">
+        <div class="_alert positive_alert">
+            <span>Your task has been Added!<button class = "cross_button"><i class="fa-solid fa-xmark"></i></button></span>
+        </div>
+        <div class="_alert negative_alert">
+            <span>Your task has been Removed!<button class = "cross_button"><i class="fa-solid fa-xmark"></i></button></span>
+        </div>
+    </div>
+    <div id="container">
+        <h1>TO - DO LIST</h1>
+        <div id="main-section">
+            <div class="left decoration">
+                <h3>Manage My List</h3>
+                <input type="text" name="texttitle" id="texttitle" class="input-decoration" placeholder="Your To - Do title here...">
+                <input type="text" name="textdesc" id="textdesc" class="input-decoration" placeholder="Details about the task...">
+                <div class="left-buttons">
+                <button id="addListButton" class="btn-primary">Add</button>
+                <button id="removeListButton" class="btn-primary">Remove</button>
+                </div>
+            </div>
+
+            <div class="right decoration">
+                <h3>My Tasks</h3>
+                <div id="todo">
+                </div>
+            </div>
+        </div>
+        <div class="quote-section">
+            This is Quote Section
+        </div>
+        <footer>
+            <p>Made with <span>&#x2764;</span> by Binod.</p>
+        </footer>
+
+        <script src="script.js">
+        </script>
+        <script src="https://kit.fontawesome.com/049e8ca3e9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
