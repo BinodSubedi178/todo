@@ -39,7 +39,6 @@ input:focus::placeholder {
     display: flex;
     position: absolute;
     border: none;
-    top: 10px;
     border-radius: 6px;
     width: 26%;
     align-items: center;
@@ -49,12 +48,17 @@ input:focus::placeholder {
 .positive_alert{
     background-color: rgba(0, 128, 0, 0.6);
     color: rgba(255, 255, 255, 0.7);
-    display: none;
+    top: -50px;
+    transition: 0.4s;
 }
 .negative_alert{
     background-color: rgba(128, 0, 0, 0.6);
     color: rgba(255, 255, 255, 0.7);
-    display: none;
+    top: -50px;
+}
+.blank_msg{
+    top: -50px;
+    transition: 0.4s;
 }
 ._alert span{
     display: flex;
@@ -66,7 +70,7 @@ input:focus::placeholder {
 #container {
     background:linear-gradient(#000428,#004e92);
     height: 100vh;
-    max-height: max-content;
+    /* max-height: max-content; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -162,7 +166,7 @@ input:focus::placeholder {
     display: flex;
     align-items: center;
     background-color: #00042880;
-    height: 35px;
+    height: max-content;
     border-radius: 6.5px;
     width: 95%;
     margin: 5px;
@@ -185,6 +189,8 @@ footer{
     width: 100%;
     color: rgb(221, 219, 219);
     background-color: #07101a79;
+    position: absolute;
+    bottom: 0px;
 }
 footer p span{
     color: red;
