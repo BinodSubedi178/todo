@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 .App {
   text-align: center;
 }
@@ -35,4 +36,125 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* CSS OF NavBar  */
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+  color:#10aae3;
+  font-family: "Madimi One", sans-serif;
+  font-size: 3.7rem;
+}
+h1 span{
+  color: #5e60d5;
+}
+.input-group{
+  width: 55%;
+  margin: auto;
+}
+.form-control, .form-control:focus{
+  background-color: #262626;
+  color: rgb(214, 214, 214);
+  border-Radius:9px !important;
+  border: none;
+  outline: none !important;
+  z-index: 2;
+}
+.list-input-area{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.input-group{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+}
+.btn-primary{
+font-size:0.8rem;
+background-Color:#10aae3;
+border: 1px solid transparent;
+}
+.btn-primary:hover{
+  background-Color:#0682b0;
+  border: 1px solid transparent;
+}
+/* TASKS CSS  */
+.box{
+  padding: 5% 8% 0 8%;
+  position: relative;
+  flex-direction: column;
+  height: 75vh;
+  background-color:#1A1A1A;
+  gap: 10px;
+}
+.tasks{
+  color: white;
+  width: 60%;
+  justify-content: center;
+  height: max-content;
+}
+.rounded-pill{
+  top: -13px !important;
+  background-color: #43454a !important;
+}
+.badge{
+  display: flex;
+}
+.badge h5{
+  color:#10aae3;
+  font-family: "Madimi One", sans-serif;
+  font-size:1.2rem;
+}
+.badge-left h5{
+  color:#10aae3;
+}
+.badge-right h5{
+  color:#5e60d5;
+}
+.horizontal-line{
+  background-color: #262626;
+  height: 2px;
+  width: 60%;
+  opacity: 100;
+  margin: auto;
+}
+.no-tasks-display-box{
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(155, 155, 155);
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  font-family: "Madimi One", sans-serif;
+  gap: 5px;
+}
+.tasks-group{
+  display: flex;
+}
+.card{
+  width: 65%;
+  background-color: #262626;
+  color: rgb(205, 205, 205);
+  border-radius: 9px;
+  font-size: 1rem;
+}
+.card-body{
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+}
+.checkbox{
+  margin: 0 25px 0 0;
+  height: 14px;
+  width: 14px;
 }
