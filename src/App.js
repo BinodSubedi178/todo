@@ -1,14 +1,16 @@
-import './App.css';
-import NavBar from './components/NavBar'
-import Input from './components/Input';
+import "./App.css";
+import NavBar from "./components/NavBar";
+import Input from "./components/Input";
+import NoTasks from "./components/NoTasks";
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
-      <NavBar/>
-      <Input/>
+      <NavBar />
+      <Input />
     </div>
-  )
-}
+  );
+};
 
 export default App;

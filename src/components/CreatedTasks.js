@@ -1,27 +1,27 @@
-import React from 'react'
+import React from "react";
+import NoTasks from "./NoTasks";
 
-const CreatedTasks = () => {
-    return (
-        <div className="no-tasks-display-box container-fluid d-flex">
-            <div class="card">
-                <div class="card-body">
-                    <div><input className='checkbox' type="checkbox" /><label htmlFor="checkbox"></label>
-                    </div><i class="fa-regular fa-trash-can"></i>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div><input className='checkbox' type="checkbox" /><label htmlFor="checkbox"> Learn Python</label>
-                    </div><i class="fa-regular fa-trash-can"></i>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div><input className='checkbox' type="checkbox" /><label htmlFor="checkbox"> Learn Animation</label>
-                    </div><i class="fa-regular fa-trash-can"></i>
-                </div>
-            </div>
-        </div>
-    )
+const CreatedTasks = (props) => {
+  const { toDoTask } = props;
+
+let handleTrashClick = () =>{
 }
+  return (
+    <div className="no-tasks-display-box container-fluid d-flex">
+      <div className="card">
+        <div className="card-body">
+          <div
+            style={{display: "flex", alignItems: "center",justifyContent: "center"}}>
+            <input className="checkbox" type="checkbox"
+            // checked={checkmark}
+            //  onChange = {hadleCheckboxChange}
+             />
+            <label htmlFor="checkbox">{toDoTask}</label>
+          </div>
+          <i className="fa-regular fa-trash-can" style={{cursor:"pointer"}}></i>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default CreatedTasks;

@@ -1,8 +1,9 @@
 import React from "react";
 
-const NoTasks = () => {
+const NoTasks = (props) => {
+  let {noTaskOpacity} = props;
   return (
-    <div className="no-tasks-display-box container-fluid d-flex">
+    <div className="no-tasks-display-box container-fluid d-flex" style={{opacity:{noTaskOpacity}}}>
       <i
         className="fa-regular fa-clipboard-list"
         style={{
@@ -16,4 +17,7 @@ const NoTasks = () => {
     </div>
   );
 };
+  NoTasks.defaultProps ={
+    noTaskOpacity:"100"
+  }
 export default NoTasks;
