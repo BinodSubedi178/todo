@@ -4,13 +4,9 @@ import NoTasks from "./NoTasks";
 import Error from "./Error";
 import { render } from "@testing-library/react";
 
-const Input = () => {
+const Input = (props) => {
   const [inputFieldValue, setInputValue] = useState('');
   const [toDoList, setToDoList] = useState([]);
-
-  const deleteButtonHandler = ()=>{
-    console.log("Hello");
-  }
 
   const createTodoItem = () => {
     if (inputFieldValue.trim()) {
@@ -23,12 +19,16 @@ const Input = () => {
   const handleKeyPress =(event)=>{
     if (event.key === "Enter"){
       createTodoItem();
-      console.log("Enter is being pressed properly")
     }
   }
   const handleInputChange = (event) => {
     setInputValue(event.target.value)
   };
+  const handleTaskDeletion = (taskIndex) =>{
+    const newToDoList = [...toDoList];
+    newToDoList.splice(taskIndex, 1);
+    setToDoList(newToDoList);
+  }
   return (
     <>
       <div className="container-fluid list-input-area">
@@ -74,10 +74,9 @@ const Input = () => {
           <hr className="horizontal-line" />
         </div>
         <div>
-        {toDoList.map((task)=>{
-          console.log(toDoList)
+        {toDoList.map((task,index)=>{
           return(
-            < CreatedTasks key={task} toDoTask = {task}/>
+            < CreatedTasks key={task} toDoTask = {task} onDelete = {handleTaskDeletion} index={index}/>
           )
         })}
         </div>
