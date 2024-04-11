@@ -111,12 +111,19 @@ border: 1px solid transparent;
   color:#10aae3;
   font-family: "Madimi One", sans-serif;
   font-size:1.2rem;
+  cursor: pointer;
 }
 .badge-left h5{
   color:#10aae3;
 }
+.badge-left h5:hover{
+  color:#0d88b5;
+}
 .badge-right h5{
   color:#5e60d5;
+}
+.badge-right h5:hover{
+  color:#4f50b7;
 }
 .horizontal-line{
   background-color: #262626;
