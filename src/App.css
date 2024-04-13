@@ -87,7 +87,7 @@ border: 1px solid transparent;
 }
 /* TASKS CSS  */
 .box{
-  padding: 5% 8% 0 8%;
+  padding: 5.5% 8% 0 8%;
   position: relative;
   flex-direction: column;
   min-height: 75vh;
@@ -168,4 +168,44 @@ border: 1px solid transparent;
 .fa-trash-can:hover{
   color: red;
   transition: 0.1s;
+}
+@media (max-width:1010px){
+  .box{
+    padding-top: 6.5%;
+  }
+}
+@media (max-width:740px){
+  .box{
+    padding-top: 7.5%;
+  }
+  .input-group .btn {
+    display: none;
+  }
+  .tasks-group{
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .input-group{
+    width: 70%;
+  }
+  .card{
+    width: 80%;
+  }
+}
+@media (max-width:520px){
+  .input-group{
+    width: 80%;
+  }
+  .card{
+    width: 90%;
+  }
+}
+@media (max-width:450px){
+  .input-group{
+    width: 85%;
+  }
+  .card{
+    width: 100%;
+  }
 }
